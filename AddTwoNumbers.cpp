@@ -1,3 +1,4 @@
+#include <iostream>
 /**
  * Definition for singly-linked list.
  */
@@ -34,3 +35,44 @@ public:
         return dummy->next; // bỏ node giả
     }
 };
+
+//Hàm tiện ích tạo linked list từ mảng
+ListNode* createList(int arr[], int size){
+	ListNode* head = nullptr;
+	ListNode* tail = nullptr;
+	
+	for (int i = 0; i < size; i++){
+	   ListNode* newNode = new ListNode(arr[i]);
+	   if (!head){
+	      head = tail = newNode;
+	   } else {
+	      tail->next = newNode;
+	      tail = tail->next;
+	   }
+	}
+	return head;
+}
+
+//In linked list
+void printList(ListNode* head){
+	while(head != nullptr){
+	  std::cout << head->val;
+	  if (head->next) std::cout << " -> ";
+	  head = head->next;
+	}
+	std::cout << std::endl;
+}
+
+int main() {
+	int arr1[] = {2, 4, 3};
+	int arr2[] = {5, 6, 4};
+	ListNode* l1 = createList(arr1, 3);
+	ListNode* l2 = createList(arr2, 3);
+	Solution sol;
+	ListNode* result = sol.addTwoNumbers(l1, l2);
+	
+	std::cout << "Kết quả cộng: ";
+	printList(result);
+
+	return 0;
+}
