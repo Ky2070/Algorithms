@@ -1,40 +1,27 @@
 #include <iostream>
-/**
- * Definition for singly-linked list.
- */
-struct ListNode {
-    int val;
-    ListNode *next;
-    ListNode() : val(0), next(nullptr) {}
-    ListNode(int x) : val(x), next(nullptr) {}
-    ListNode(int x, ListNode *next) : val(x), next(next) {}
-};
+#include "AddTwoNumbers.h"
 
-class Solution {
-public:
-    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-        ListNode* dummy = new ListNode(); // node giả để dễ thao tác
-        ListNode* curr = dummy;
-        int carry = 0;
+ListNode* Solution1::addTwoNumbers(ListNode* l1, ListNode* l2) {
+	ListNode* dummy = new ListNode(); //Tạo node giả dễ thao tác
+	ListNode* curr = dummy;
+	int carry = 0;
 
-        while (l1 != nullptr || l2 != nullptr || carry > 0) {
-            int val1 = (l1 != nullptr) ? l1->val : 0;
-            int val2 = (l2 != nullptr) ? l2->val : 0;
+	while (l1 != nullptr || l2 != nullptr || carry > 0) {
+		int val1 = (l1 != nullptr) ? l1->val : 0;
+		int val2 = (l2 != nullptr) ? l2->val : 0;
 
-            int sum = val1 + val2 + carry;
-            int digit = sum % 10;
-            carry = sum / 10;
+		int sum = val1 + val2 + carry;
+		int digit = sum % 10;
+		carry = sum / 10;
 
-            curr->next = new ListNode(digit);
-            curr = curr->next;
+		curr->next = new ListNode(digit);
+		curr = curr->next;
 
-            if (l1) l1 = l1->next;
-            if (l2) l2 = l2->next;
-        }
-
-        return dummy->next; // bỏ node giả
-    }
-};
+		if (l1) l1 = l1->next;
+		if (l2) l2 = l2->next;
+	}
+	return dummy->next;
+}
 
 //Hàm tiện ích tạo linked list từ mảng
 ListNode* createList(int arr[], int size){
@@ -61,18 +48,4 @@ void printList(ListNode* head){
 	  head = head->next;
 	}
 	std::cout << std::endl;
-}
-
-int main() {
-	int arr1[] = {2, 4, 3};
-	int arr2[] = {5, 6, 4};
-	ListNode* l1 = createList(arr1, 3);
-	ListNode* l2 = createList(arr2, 3);
-	Solution sol;
-	ListNode* result = sol.addTwoNumbers(l1, l2);
-	
-	std::cout << "Kết quả cộng: ";
-	printList(result);
-
-	return 0;
 }
