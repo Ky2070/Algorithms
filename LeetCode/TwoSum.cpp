@@ -17,18 +17,3 @@ std::vector<int> Solution::twoSum(std::vector<int>& nums, int target) {
 
     return {};
 }
-
-//int main() {
-//    vector<int> nums = {11, 4, 7, 5};
-//    int target = 9;
-//
-//    Solution sol;
-//    vector<int> result = sol.twoSum(nums, target);
-//
-//    cout << "Indices found: ";
-//    for (int index : result) {
-//        cout << index << " ";
-//    }
-//
-//    return 0;
-//}

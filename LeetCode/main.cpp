@@ -1,13 +1,39 @@
 ﻿#include <iostream>
 #include <vector>
 #include <cctype>
+#include <random>
 #include "TwoSum.h"
 #include "AddTwoNumbers.h"
 //Tạo hàm thực thi riêng cho từng bài
 
 void runTwoSum() {
-	std::vector<int> nums = { 2, 7, 11, 15 };
-	int target = 9;
+	//Thiết lập bộ tạo số ngẫu nhiên
+	std::random_device rd;
+	std::mt19937 gen(rd());
+
+	//Thiết lập phạm vi phần tử mảng (ví dụ: 0 đến 20);
+	std::uniform_int_distribution<> dist(0, 20);
+	//Thiết lập số lượng phần tử mảng (ví dụ từ 5 đến 20 phần tử)
+	std::uniform_int_distribution<> size_dist(5, 20);
+	int n = size_dist(gen);
+	
+	//Tạo vector ngẫu nhiên
+	std::vector<int> nums;
+	for (int i = 0; i < n; i++) {
+		nums.push_back(dist(gen));
+	}
+
+	//In mảng ra màn hình
+	std::cout << "Generated nums: ";
+	for (int num : nums) {
+		std::cout << num << " ";
+	}
+	std::cout << std::endl;
+
+	//random target
+	std::uniform_int_distribution<int> target_dist(0, 20);
+	int target = target_dist(gen);
+	std::cout << "Random target: " << target << std::endl;
 
 	Solution sol;
 	std::vector<int> result = sol.twoSum(nums, target);
