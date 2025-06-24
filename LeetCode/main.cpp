@@ -6,7 +6,7 @@
 #include "AddTwoNumbers.h"
 //Tạo hàm thực thi riêng cho từng bài
 
-void runTwoSum() {
+void static runTwoSum() {
 	//Thiết lập bộ tạo số ngẫu nhiên
 	std::random_device rd;
 	std::mt19937 gen(rd());
@@ -45,12 +45,39 @@ void runTwoSum() {
 	std::cout << std::endl;
 }
 
-void runAddTwoNumbers() {
-	int arr1[] = { 2, 4, 3 };
-	int arr2[] = { 5, 6, 4 };
+void static runAddTwoNumbers() {
+	//Random setup
+	std::random_device rd;
+	std::mt19937 gen(rd());
+	
+	// Độ dài mảng ngẫu nhiên từ 0 đến 8;
+	std::uniform_int_distribution<> size_dist(0, 8);
+	int size1 = size_dist(gen);
+	int size2 = size_dist(gen);
 
-	ListNode* l1 = createList(arr1, 3);
-	ListNode* l2 = createList(arr2, 3);
+	// Các chữ số từ 0 đến 9 (vì từng node là 1 chữ số)
+	std::uniform_int_distribution<> digit_dist(0, 9);
+
+	std::vector<int> arr1, arr2;
+	
+	for (int i = 0; i < size1; i++) {
+		arr1.push_back(digit_dist(gen));
+	}
+	for (int i = 0; i < size2; i++) {
+		arr2.push_back(digit_dist(gen));
+	}
+
+	// In ra hai dãy số
+	std::cout << "List 1: ";
+	for (int x : arr1) std::cout << x << " ";
+	std::cout << std::endl;
+
+	std::cout << "List 2: ";
+	for (int x : arr2) std::cout << x << " ";
+	std::cout << std::endl;
+
+	ListNode* l1 = createList(arr1.data(), arr1.size());
+	ListNode* l2 = createList(arr2.data(), arr2.size());
 
 	Solution1 sol1;
 	ListNode* result = sol1.addTwoNumbers(l1, l2);

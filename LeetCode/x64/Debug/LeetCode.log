@@ -1,2 +1,4 @@
 ﻿  main.cpp
+C:\Users\nguye\source\repos\LeetCode\LeetCode\main.cpp(79,50): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\nguye\source\repos\LeetCode\LeetCode\main.cpp(80,50): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
   LeetCode.vcxproj -> C:\Users\nguye\source\repos\LeetCode\x64\Debug\LeetCode.exe
