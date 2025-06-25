@@ -24,12 +24,18 @@
     <ClCompile Include="AddTwoNumbers.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="LongestSubstring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TwoSum.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="AddTwoNumbers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LongestSubstring.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

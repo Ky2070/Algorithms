@@ -2,8 +2,10 @@
 #include <vector>
 #include <cctype>
 #include <random>
+#include <string>
 #include "TwoSum.h"
 #include "AddTwoNumbers.h"
+#include "LongestSubstring.h"
 //Tạo hàm thực thi riêng cho từng bài
 
 void static runTwoSum() {
@@ -85,6 +87,18 @@ void static runAddTwoNumbers() {
 	std::cout << "Result of addition: ";
 	printList(result);
 }
+
+// Hàm chạy LongestSubstring
+void runLengthOfLongestSubstring() {
+	Solution2 sol2;
+	std::string test1 = "abcabcbb";
+	std::string test2 = "bbbbb";
+	std::string test3 = "pwwkew";
+
+	std::cout << "Test 1 (\"abcabcbb\"): " << sol2.lengthOfLongestSubstring(test1) << std::endl;
+	std::cout << "Test 2 (\"bbbbb\"): " << sol2.lengthOfLongestSubstring(test2) << std::endl;
+	std::cout << "Test 3 (\"pwwkew\"): " << sol2.lengthOfLongestSubstring(test3) << std::endl;
+}
 int main() {
 	while (true) {
 		int choice;
@@ -93,6 +107,7 @@ int main() {
 		std::cout << "0. Exit" << std::endl;
 		std::cout << "1. Two Sum\n";
 		std::cout << "2. Add Two Numbers (Linked List)\n";
+		std::cout << "3. Longest Substring Without Repeating Char\n";
 		std::cout << "============================" << std::endl;
 		std::cout << "Your Choice: ";
 		std::cin >> choice;
@@ -103,6 +118,7 @@ int main() {
 				return 0;
 			case 1: runTwoSum(); break;
 			case 2: runAddTwoNumbers(); break;
+			case 3: runLengthOfLongestSubstring(); break;
 		default: std::cout << "Invalid choice.\n"; break;
 		}
 		
