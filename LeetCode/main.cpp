@@ -6,6 +6,8 @@
 #include "TwoSum.h"
 #include "AddTwoNumbers.h"
 #include "LongestSubstring.h"
+#include "MedianSortedArrays.h"
+#include "HeapSort.h"
 //Tạo hàm thực thi riêng cho từng bài
 
 void static runTwoSum() {
@@ -99,6 +101,49 @@ void runLengthOfLongestSubstring() {
 	std::cout << "Test 2 (\"bbbbb\"): " << sol2.lengthOfLongestSubstring(test2) << std::endl;
 	std::cout << "Test 3 (\"pwwkew\"): " << sol2.lengthOfLongestSubstring(test3) << std::endl;
 }
+
+void runMedianSortedArrays() {
+	//Random setup;
+	std::random_device rd;
+	std::mt19937 gen(rd());
+	std::uniform_int_distribution<> distLen(1, 4);
+	std::uniform_int_distribution<> distVal(1, 6);
+
+	int len1 = distLen(gen);
+	int len2 = distLen(gen);
+
+	std::vector<int> nums1(len1);
+	std::vector<int> nums2(len2);
+
+	for (int& x : nums1) x = distVal(gen);
+	for (int& x : nums2) x = distVal(gen);
+
+	// ✅ In ra trước khi sort
+	std::cout << "Before sort:\n";
+	std::cout << "nums1: ";
+	for (int x : nums1) std::cout << x << " ";
+	std::cout << "\nnums2: ";
+	for (int x : nums2) std::cout << x << " ";
+	std::cout << "\n";
+
+	// ✅ Tạo bản sao và sort bản sao
+	std::vector<int> sortedNums1 = nums1;
+	std::vector<int> sortedNums2 = nums2;
+
+	heapSort(sortedNums1);
+	heapSort(sortedNums2);
+
+	// ✅ In sau khi sort
+	std::cout << "After sort:\n";
+	std::cout << "sortedNums1: ";
+	for (int x : sortedNums1) std::cout << x << " ";
+	std::cout << "\nsortedNums2: ";
+	for (int x : sortedNums2) std::cout << x << " ";
+	std::cout << "\n";
+
+	Solution3 sol3;
+	std::cout << "Median Sorted Arrays: " << sol3.findMedianSortedArrays(sortedNums1, sortedNums2) << std::endl;
+}
 int main() {
 	while (true) {
 		int choice;
@@ -108,6 +153,7 @@ int main() {
 		std::cout << "1. Two Sum\n";
 		std::cout << "2. Add Two Numbers (Linked List)\n";
 		std::cout << "3. Longest Substring Without Repeating Char\n";
+		std::cout << "4. Median Sorted Arrays\n";
 		std::cout << "============================" << std::endl;
 		std::cout << "Your Choice: ";
 		std::cin >> choice;
@@ -119,6 +165,7 @@ int main() {
 			case 1: runTwoSum(); break;
 			case 2: runAddTwoNumbers(); break;
 			case 3: runLengthOfLongestSubstring(); break;
+			case 4: runMedianSortedArrays(); break;
 		default: std::cout << "Invalid choice.\n"; break;
 		}
 		

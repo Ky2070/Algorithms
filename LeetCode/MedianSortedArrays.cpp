@@ -19,7 +19,7 @@ double Solution3::findMedianSortedArrays(std::vector<int>& nums1, std::vector<in
 		int j = (m + n + 1) / 2 - i;
 
 		int maxLeft1 = (i == 0) ? INT_MIN : nums1[i - 1];
-		int minRight1 = (i == m) ? INT_MAX : nums2[i];
+		int minRight1 = (i == m) ? INT_MAX : nums1[i];
 
 		int maxLeft2 = (j == 0) ? INT_MIN : nums2[j - 1];
 		int minRight2 = (j == n) ? INT_MAX : nums2[j];
@@ -39,4 +39,5 @@ double Solution3::findMedianSortedArrays(std::vector<int>& nums1, std::vector<in
 			left = i + 1;
 		}
 	}
+	return 0.0;
 }
