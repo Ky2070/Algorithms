@@ -1,4 +1,18 @@
-﻿  main.cpp
-C:\Users\nguye\source\repos\LeetCode\LeetCode\main.cpp(83,50): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+﻿  LongestPalindromic.cpp
+C:\Users\nguye\source\repos\LeetCode\LeetCode\LongestPalindromic.cpp(9,8): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  main.cpp
 C:\Users\nguye\source\repos\LeetCode\LeetCode\main.cpp(84,50): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\nguye\source\repos\LeetCode\LeetCode\main.cpp(85,50): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\nguye\source\repos\LeetCode\LeetCode\main.cpp(152,15): warning C4566: character represented by universal-character-name '\u1ED7' cannot be represented in the current code page (1252)
+C:\Users\nguye\source\repos\LeetCode\LeetCode\main.cpp(152,15): warning C4566: character represented by universal-character-name '\u0111' cannot be represented in the current code page (1252)
+C:\Users\nguye\source\repos\LeetCode\LeetCode\main.cpp(152,15): warning C4566: character represented by universal-character-name '\u1ED1' cannot be represented in the current code page (1252)
+C:\Users\nguye\source\repos\LeetCode\LeetCode\main.cpp(152,15): warning C4566: character represented by universal-character-name '\u1EE9' cannot be represented in the current code page (1252)
+C:\Users\nguye\source\repos\LeetCode\LeetCode\main.cpp(152,15): warning C4566: character represented by universal-character-name '\u1EA5' cannot be represented in the current code page (1252)
+C:\Users\nguye\source\repos\LeetCode\LeetCode\main.cpp(154,15): warning C4566: character represented by universal-character-name '\u1ED7' cannot be represented in the current code page (1252)
+C:\Users\nguye\source\repos\LeetCode\LeetCode\main.cpp(154,15): warning C4566: character represented by universal-character-name '\u0111' cannot be represented in the current code page (1252)
+C:\Users\nguye\source\repos\LeetCode\LeetCode\main.cpp(154,15): warning C4566: character represented by universal-character-name '\u1ED1' cannot be represented in the current code page (1252)
+C:\Users\nguye\source\repos\LeetCode\LeetCode\main.cpp(154,15): warning C4566: character represented by universal-character-name '\u1EE9' cannot be represented in the current code page (1252)
+C:\Users\nguye\source\repos\LeetCode\LeetCode\main.cpp(154,15): warning C4566: character represented by universal-character-name '\u1EA5' cannot be represented in the current code page (1252)
+C:\Users\nguye\source\repos\LeetCode\LeetCode\main.cpp(154,15): warning C4566: character represented by universal-character-name '\u1EE7' cannot be represented in the current code page (1252)
+  Generating Code...
   LeetCode.vcxproj -> C:\Users\nguye\source\repos\LeetCode\x64\Debug\LeetCode.exe

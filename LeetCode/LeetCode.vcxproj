@@ -125,6 +125,7 @@
   <ItemGroup>
     <ClCompile Include="AddTwoNumbers.cpp" />
     <ClCompile Include="HeapSort.cpp" />
+    <ClCompile Include="LongestPalindromic.cpp" />
     <ClCompile Include="LongestSubstring.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MedianSortedArrays.cpp" />
@@ -133,6 +134,7 @@
   <ItemGroup>
     <ClInclude Include="AddTwoNumbers.h" />
     <ClInclude Include="HeapSort.h" />
+    <ClInclude Include="LongestPalindromic.h" />
     <ClInclude Include="LongestSubstring.h" />
     <ClInclude Include="MedianSortedArrays.h" />
     <ClInclude Include="TwoSum.h" />

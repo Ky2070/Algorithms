@@ -8,6 +8,7 @@
 #include "LongestSubstring.h"
 #include "MedianSortedArrays.h"
 #include "HeapSort.h"
+#include "LongestPalindromic.h"
 //Tạo hàm thực thi riêng cho từng bài
 
 void static runTwoSum() {
@@ -144,6 +145,14 @@ void runMedianSortedArrays() {
 	Solution3 sol3;
 	std::cout << "Median Sorted Arrays: " << sol3.findMedianSortedArrays(sortedNums1, sortedNums2) << std::endl;
 }
+
+void runLongestPalindromic() {
+	std::string s = "babad";
+	Solution4 sol4;
+	std::cout << "Chuỗi đối xứng dài nhất: " << sol4.longestPalindrome(s) << std::endl;
+	std::string s1 = "abbd";
+	std::cout << "Chuỗi đối xứng dài nhất của s1: " << sol4.longestPalindrome(s1) << std::endl;
+}
 int main() {
 	while (true) {
 		int choice;
@@ -154,6 +163,7 @@ int main() {
 		std::cout << "2. Add Two Numbers (Linked List)\n";
 		std::cout << "3. Longest Substring Without Repeating Char\n";
 		std::cout << "4. Median Sorted Arrays\n";
+		std::cout << "5. Longest Panlindromic\n";
 		std::cout << "============================" << std::endl;
 		std::cout << "Your Choice: ";
 		std::cin >> choice;
@@ -166,6 +176,7 @@ int main() {
 			case 2: runAddTwoNumbers(); break;
 			case 3: runLengthOfLongestSubstring(); break;
 			case 4: runMedianSortedArrays(); break;
+			case 5: runLongestPalindromic(); break;
 		default: std::cout << "Invalid choice.\n"; break;
 		}
 		
