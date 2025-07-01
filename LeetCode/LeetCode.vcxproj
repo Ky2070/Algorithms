@@ -130,6 +130,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MedianSortedArrays.cpp" />
     <ClCompile Include="TwoSum.cpp" />
+    <ClCompile Include="Zigzag.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AddTwoNumbers.h" />
@@ -138,6 +139,7 @@
     <ClInclude Include="LongestSubstring.h" />
     <ClInclude Include="MedianSortedArrays.h" />
     <ClInclude Include="TwoSum.h" />
+    <ClInclude Include="Zigzag.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

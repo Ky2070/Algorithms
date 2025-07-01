@@ -1,3 +1,2 @@
-﻿  LongestPalindromic.cpp
-C:\Users\nguye\source\repos\LeetCode\LeetCode\LongestPalindromic.cpp(9,8): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  LeetCode.vcxproj -> C:\Users\nguye\source\repos\LeetCode\x64\Debug\LeetCode.exe
+﻿  Zigzag.cpp
+  LeetCode.vcxproj -> C:\Users\Administrator\repo\Algorithms\x64\Debug\LeetCode.exe

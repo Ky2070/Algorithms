@@ -9,6 +9,7 @@
 #include "MedianSortedArrays.h"
 #include "HeapSort.h"
 #include "LongestPalindromic.h"
+#include "Zigzag.h"
 //Tạo hàm thực thi riêng cho từng bài
 
 void static runTwoSum() {
@@ -153,6 +154,12 @@ void runLongestPalindromic() {
 	std::string s1 = "abbd";
 	std::cout << "Chuỗi đối xứng dài nhất của s1: " << sol4.longestPalindrome(s1) << std::endl;
 }
+
+void runZigzagConversion() {
+	std::string s = "PAYPALISHING";
+	Solution5 sol5;
+	std::cout << "Zigzag-Conversion: " << sol5.zigzagConvert(s) << std::endl;
+}
 int main() {
 	while (true) {
 		int choice;
@@ -164,6 +171,7 @@ int main() {
 		std::cout << "3. Longest Substring Without Repeating Char\n";
 		std::cout << "4. Median Sorted Arrays\n";
 		std::cout << "5. Longest Panlindromic\n";
+		std::cout << "6.Zigzag Conversion\n";
 		std::cout << "============================" << std::endl;
 		std::cout << "Your Choice: ";
 		std::cin >> choice;
@@ -177,6 +185,7 @@ int main() {
 			case 3: runLengthOfLongestSubstring(); break;
 			case 4: runMedianSortedArrays(); break;
 			case 5: runLongestPalindromic(); break;
+			case 6: runZigzagConversion(); break;
 		default: std::cout << "Invalid choice.\n"; break;
 		}
 		
