@@ -158,7 +158,7 @@ void runLongestPalindromic() {
 void runZigzagConversion() {
 	std::string s = "PAYPALISHING";
 	Solution5 sol5;
-	std::cout << "Zigzag-Conversion: " << sol5.zigzagConvert(s) << std::endl;
+	std::cout << "Zigzag-Conversion: " << sol5.zigzagConvert(s, 3) << std::endl;
 }
 int main() {
 	while (true) {
