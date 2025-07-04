@@ -129,6 +129,7 @@
     <ClCompile Include="LongestSubstring.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MedianSortedArrays.cpp" />
+    <ClCompile Include="ReverseInteger.cpp" />
     <ClCompile Include="TwoSum.cpp" />
     <ClCompile Include="Zigzag.cpp" />
   </ItemGroup>
@@ -138,6 +139,7 @@
     <ClInclude Include="LongestPalindromic.h" />
     <ClInclude Include="LongestSubstring.h" />
     <ClInclude Include="MedianSortedArrays.h" />
+    <ClInclude Include="ReverseInteger.h" />
     <ClInclude Include="TwoSum.h" />
     <ClInclude Include="Zigzag.h" />
   </ItemGroup>

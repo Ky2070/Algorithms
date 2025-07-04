@@ -36,6 +36,12 @@
     <ClCompile Include="LongestPalindromic.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Zigzag.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ReverseInteger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TwoSum.h">
@@ -54,6 +60,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="LongestPalindromic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Zigzag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ReverseInteger.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

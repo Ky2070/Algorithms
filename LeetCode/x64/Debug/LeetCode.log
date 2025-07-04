@@ -1,2 +1,18 @@
-﻿  Zigzag.cpp
+﻿  main.cpp
+C:\Users\Administrator\repo\Algorithms\LeetCode\main.cpp(86,50): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Administrator\repo\Algorithms\LeetCode\main.cpp(87,50): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Administrator\repo\Algorithms\LeetCode\main.cpp(154,15): warning C4566: character represented by universal-character-name '\u1ED7' cannot be represented in the current code page (1252)
+C:\Users\Administrator\repo\Algorithms\LeetCode\main.cpp(154,15): warning C4566: character represented by universal-character-name '\u0111' cannot be represented in the current code page (1252)
+C:\Users\Administrator\repo\Algorithms\LeetCode\main.cpp(154,15): warning C4566: character represented by universal-character-name '\u1ED1' cannot be represented in the current code page (1252)
+C:\Users\Administrator\repo\Algorithms\LeetCode\main.cpp(154,15): warning C4566: character represented by universal-character-name '\u1EE9' cannot be represented in the current code page (1252)
+C:\Users\Administrator\repo\Algorithms\LeetCode\main.cpp(154,15): warning C4566: character represented by universal-character-name '\u1EA5' cannot be represented in the current code page (1252)
+C:\Users\Administrator\repo\Algorithms\LeetCode\main.cpp(156,15): warning C4566: character represented by universal-character-name '\u1ED7' cannot be represented in the current code page (1252)
+C:\Users\Administrator\repo\Algorithms\LeetCode\main.cpp(156,15): warning C4566: character represented by universal-character-name '\u0111' cannot be represented in the current code page (1252)
+C:\Users\Administrator\repo\Algorithms\LeetCode\main.cpp(156,15): warning C4566: character represented by universal-character-name '\u1ED1' cannot be represented in the current code page (1252)
+C:\Users\Administrator\repo\Algorithms\LeetCode\main.cpp(156,15): warning C4566: character represented by universal-character-name '\u1EE9' cannot be represented in the current code page (1252)
+C:\Users\Administrator\repo\Algorithms\LeetCode\main.cpp(156,15): warning C4566: character represented by universal-character-name '\u1EA5' cannot be represented in the current code page (1252)
+C:\Users\Administrator\repo\Algorithms\LeetCode\main.cpp(156,15): warning C4566: character represented by universal-character-name '\u1EE7' cannot be represented in the current code page (1252)
+  ReverseInteger.cpp
+  Zigzag.cpp
+  Generating Code...
   LeetCode.vcxproj -> C:\Users\Administrator\repo\Algorithms\x64\Debug\LeetCode.exe

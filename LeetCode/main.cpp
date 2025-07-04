@@ -10,6 +10,7 @@
 #include "HeapSort.h"
 #include "LongestPalindromic.h"
 #include "Zigzag.h"
+#include "ReverseInteger.h"
 //Tạo hàm thực thi riêng cho từng bài
 
 void static runTwoSum() {
@@ -160,6 +161,15 @@ void runZigzagConversion() {
 	Solution5 sol5;
 	std::cout << "Zigzag-Conversion: " << sol5.zigzagConvert(s, 3) << std::endl;
 }
+void runReverseInteger() {
+	Solution6 sol6;
+	int x = 123456789;
+	std::cout << "Reverse Integer of " << x << ": " << sol6.reverseInteger(x) << std::endl;
+	x = -123456789;
+	std::cout << "Reverse Integer of " << x << ": " << sol6.reverseInteger(x) << std::endl;
+	x = 1534236469; // This will overflow
+	std::cout << "Reverse Integer of " << x << ": " << sol6.reverseInteger(x) << std::endl;
+}
 int main() {
 	while (true) {
 		int choice;
@@ -171,7 +181,8 @@ int main() {
 		std::cout << "3. Longest Substring Without Repeating Char\n";
 		std::cout << "4. Median Sorted Arrays\n";
 		std::cout << "5. Longest Panlindromic\n";
-		std::cout << "6.Zigzag Conversion\n";
+		std::cout << "6. Zigzag Conversion\n";
+		std::cout << "7. Reverse Integer\n";
 		std::cout << "============================" << std::endl;
 		std::cout << "Your Choice: ";
 		std::cin >> choice;
@@ -186,6 +197,7 @@ int main() {
 			case 4: runMedianSortedArrays(); break;
 			case 5: runLongestPalindromic(); break;
 			case 6: runZigzagConversion(); break;
+			case 7: runReverseInteger(); break;
 		default: std::cout << "Invalid choice.\n"; break;
 		}
 		
